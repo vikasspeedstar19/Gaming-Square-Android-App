@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/gamessquare_main_List_all"
+            android:title="Home"
+            android:icon="@mipmap/ic_launcher"
+            ></item>
+        <item
+            android:id="@+id/gamessquare_sub_list1"
+            android:title="Top 100"
+            android:icon="@mipmap/ic_launcher"
+            ></item>
+        <item
+            android:id="@+id/gamessquare_sub_list2"
+            android:title="Exclusives"
+            android:icon="@mipmap/ic_launcher"
+            ></item>
+        <item
+            android:id="@+id/gamessquare_sub_list3"
+            android:title="Youtubers"
+            android:icon="@mipmap/ic_launcher"
+            ></item>
+
+    </group>
+
+</menu>

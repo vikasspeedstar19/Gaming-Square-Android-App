@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gaming Square</string>
+    <string name="string_open">OPEN DRAWER</string>
+    <string name="string_close">CLOSE DRAWER</string>
+</resources>

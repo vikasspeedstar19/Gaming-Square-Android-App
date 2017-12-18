@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:padding="5dp"
+    android:background="@color/cardview_dark_background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:text="In Progress"
+        android:id="@+id/gaming_square_game_dlc_name"
+        android:textColor="@color/main_list_text_color"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overview"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/main_list_text_color"
+        />
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_width="match_parent"
+        android:textColor="@color/main_list_text_color"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="In Progress"
+        android:id="@+id/gaming_square_game_dlc_overview"
+        android:layout_marginTop="4dp"
+        app:trimExpandedText="Show More"
+        app:trimCollapsedText="Show Less"
+        app:trimMode="trimModeLength"
+        app:trimLines="50"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Story"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/main_list_text_color"
+        />
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gaming_square_game_dlc_story"
+        android:layout_marginLeft="10dp"
+        android:text="In Progress"
+        android:textSize="16dp"
+        android:textColor="@color/main_list_text_color"
+        android:layout_marginTop="4dp"
+        app:trimExpandedText="Show More"
+        app:trimCollapsedText="Show Less"
+        app:trimMode="trimModeLength"
+        app:trimLines="50"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ratings"
+        android:textSize="18dp"
+        android:textColor="@color/main_list_text_color"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/gaming_square_game_dlc_ratings"
+        android:layout_marginLeft="10dp"
+        android:text="In Progress"
+        android:layout_marginTop="4dp"
+        >
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

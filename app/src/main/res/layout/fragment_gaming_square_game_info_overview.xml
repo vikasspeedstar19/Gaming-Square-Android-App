@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/gaming_square_game_overview_progress_layout"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_dark_background">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                >
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Witcher 3: Wild Hunt (Polish: Wiedźmin 3: Dziki Gon) is a fantasy open-world action role-playing video game developed by CD Projekt RED.[1] Announced in February 2013, it was released worldwide for Microsoft Windows, PlayStation 4, and Xbox One on 19 May 2015.[2] The game is the third in the series, preceded by The Witcher and The Witcher 2: Assassins of Kings, which are based on the series of fantasy novels by Polish author Andrzej Sapkowski.
+
+Played in a third-person perspective, players control protagonist Geralt of Rivia, a monster hunter known as a witcher, who sets out on a long journey through the Northern Kingdoms. In the game, players battle against the world's many dangers using various weapons and magic, while interacting with non-player characters and completing side quests and main missions to progress through the story.
+
+The game was met with critical acclaim and was a financial success, selling over 6 million copies in six weeks. The game won many Game of the Year awards from various gaming publications, critics, and game award shows, including the Golden Joystick Awards and The Game Awards."
+                    android:id="@+id/gamingSquareGameInfoOverview"
+                    android:textSize="16dp"
+                    android:textColor="@color/main_list_text_color"
+                    app:trimMode="trimModeLine"
+                    app:trimLines="20"
+                    app:trimExpandedText="Show More"
+                    app:trimCollapsedText="Show Less"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

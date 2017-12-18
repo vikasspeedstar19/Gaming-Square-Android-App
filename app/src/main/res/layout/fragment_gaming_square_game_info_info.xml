@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/gaming_square_game_info_progress_layout"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_dark_background">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Game Name"
+                    android:textColor="@color/main_list_text_color"
+                    android:id="@+id/gamingSquareGameInfoGameName"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/gamingSquareGameInfoDeveloper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:text="Sample Text"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="16dp"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Publisher"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/gamingSquareGameInfoPublisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="16dp"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genre"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/gamingSquareGameInfoGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Release Dates"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/gamingSquareGameInfoReleaseDates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Game Modes"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/gamingSquareGameInfoGameModes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Player View"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/gamingSquareGameInfoPlayerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:textColor="@color/main_list_text_color"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

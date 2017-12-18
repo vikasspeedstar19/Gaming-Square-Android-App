@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/games_share" android:title="Games Share"
+        android:icon="@drawable/ic_share_white_48dp"
+        app:showAsAction="always|collapseActionView"
+        ></item>
+    <item android:id="@+id/option1" android:title="Option 1"></item>
+    <item android:id="@+id/option2" android:title="Option 2"></item>
+    <item android:id="@+id/option3" android:title="Option 3"></item>
+    <item android:id="@+id/option4" android:title="Option 4"></item>
+</menu>

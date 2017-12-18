@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/gaming_square_game_story_progress_layout"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_dark_background">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                >
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The game begins with Geralt of Rivia searching for his lover, the sorceress Yennefer of Vengerberg, with Vesemir, a senior witcher. Yennefer had previously tried to get in contact with Geralt, but was forced to flee in order to avoid the fighting between the warring powers of Nilfgaard and Redania.
+
+It is Yennefer, however, who ultimately finds Geralt. Accompanied by a Nilfgaardian guard, Yennefer informs Geralt that Emhyr var Emreis, the emperor of Nilfgaard, has summoned Geralt for an audience in Vizima, the former capital of the recently conquered nation of Temeria. In Vizima, Emhyr tasks Geralt with finding Ciri, the emperor's biological daughter and Geralt's adoptive ward. Ciri is a Child of the Elder Blood, the last heir to an ancient Elven bloodline that bestows her with the power to manipulate space and time. She is on the run from the Wild Hunt, a retinue of spectral elves determined to capture Ciri and use her abilities for their own malicious purposes. Geralt agrees to search for her and begins by attempting to contact one of Emhyr's Nilfgaardian spies in Velen.
+
+The Wild Hunt reaches the spy before Geralt, torturing him to death. Geralt manages to recover the spy's notes, which indicate that Ciri sought refuge in Crow's Perch, the fort of Velen's self-appointed ruler known as the Bloody Baron. The Baron refuses to help Geralt find Ciri until the witcher locates and returns the Baron's missing wife and daughter. Geralt quickly discovers that the Baron's wife and daughter are missing of their own volition, driven away by the Baron's abuse and alcoholism. Geralt learns that the Baron's daughter fled to the city of Oxenfurt, but her mother's trail goes cold."
+                android:textSize="16dp"
+                android:id="@+id/gamingSquareGameInfoStory"
+                android:textColor="@color/main_list_text_color"
+                app:trimExpandedText="Show More"
+                app:trimCollapsedText="Show Less"
+                android:layout_marginBottom="20dp"
+                app:trimMode="trimModeLine"
+                app:trimLines="20"
+                />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>
