@@ -60,6 +60,9 @@ public class GamingSquareGameScreenshotsVolleyData {
     private void gamingSquareGetGameScreenshots(String game_id) {
         HashMap<String, String> gamingSquareGameScreenshotsParams = new HashMap<String, String>();
         gamingSquareGameScreenshotsParams.put(new GamingSquareHelper().GAMING_SQUARE_GAMES_ID, game_id);
+        gamingSquareGameScreenshotsParams.put(new GamingSquareHelper().GAMING_SQUARE_VERSION_ID, "1.0");
+        gamingSquareGameScreenshotsParams.put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM, "1");
+
 
         JsonObjectRequest req = new JsonObjectRequest(Request.Method.POST,
                 new GamingSquareHelper().GAMING_SQAURE_BASE_URL + url,

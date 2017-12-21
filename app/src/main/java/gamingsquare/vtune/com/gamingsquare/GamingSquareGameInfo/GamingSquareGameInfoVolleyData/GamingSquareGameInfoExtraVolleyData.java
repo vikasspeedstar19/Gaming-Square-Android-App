@@ -46,6 +46,8 @@ public class GamingSquareGameInfoExtraVolleyData {
 
         HashMap<String, String> gamingSquareGameOverviewParams = new HashMap<String, String>();
         gamingSquareGameOverviewParams.put(new GamingSquareHelper().GAMING_SQUARE_GAMES_ID, game_id);
+        gamingSquareGameOverviewParams.put(new GamingSquareHelper().GAMING_SQUARE_VERSION_ID, "1.0");
+        gamingSquareGameOverviewParams.put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM, "1");
 
         JsonObjectRequest req = new JsonObjectRequest(Request.Method.POST,
                 new GamingSquareHelper().GAMING_SQAURE_BASE_URL + url, new JSONObject(gamingSquareGameOverviewParams),
@@ -55,7 +57,6 @@ public class GamingSquareGameInfoExtraVolleyData {
                     public void onResponse(JSONObject json) {
 
                         try {
-
                             if (Integer.parseInt(json.getString("status")) == 200) {
                                 JSONObject jsonData = json.getJSONObject("data");
 

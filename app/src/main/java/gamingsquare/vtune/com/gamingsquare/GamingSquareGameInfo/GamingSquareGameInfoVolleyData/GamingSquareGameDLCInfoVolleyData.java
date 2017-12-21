@@ -38,6 +38,9 @@ public class GamingSquareGameDLCInfoVolleyData {
     public void gamingSquareGetGameDLCInfo(String game_id) {
         HashMap<String, String> gamingSquareGameDLCInfoParams = new HashMap<String, String>();
         gamingSquareGameDLCInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_DLC_ID, game_id);
+        gamingSquareGameDLCInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_VERSION_ID, "1.0");
+        gamingSquareGameDLCInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM, "1");
+
         JsonObjectRequest req = new JsonObjectRequest(Request.Method.POST,
                 new GamingSquareHelper().GAMING_SQAURE_BASE_URL + url, new JSONObject(gamingSquareGameDLCInfoParams),
                 new Response.Listener<JSONObject>() {

@@ -22,8 +22,8 @@ public class GamingSquareHelper {
     public final String GAMING_SQAURE_GAME_INFO_GAME_ID = "GAMING_SQAURE_GAME_INFO_GAME_ID";
     public final String GAMING_SQUARE_GAME_NAME = "GAMING_SQUARE_GAME_NAME";
 
-    public static String GAMING_SQAURE_BASE_URL = "http://192.168.1.100:3000/";
-    public static String GAMING_SQAURE_IMG_BASE_URL = "http://192.168.1.100:3000/";
+    public static String GAMING_SQAURE_BASE_URL = "http://192.168.56.1:3000/";
+    public static String GAMING_SQAURE_IMG_BASE_URL = "http://192.168.56.1:3000/";
 
     public final String GAMING_SQUARE_GAMES_SEARCH = "game_name";
     public final String GAMING_SQUARE_GAMES_ID = "game_id";

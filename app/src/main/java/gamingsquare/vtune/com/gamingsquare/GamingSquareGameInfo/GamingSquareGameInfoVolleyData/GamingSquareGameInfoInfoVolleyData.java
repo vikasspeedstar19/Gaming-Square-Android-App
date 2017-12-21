@@ -44,10 +44,8 @@ public class GamingSquareGameInfoInfoVolleyData {
     public void gamingSquareGetGameInfo(String game_id) {
         HashMap<String, String> gamingSquareGameInfoParams = new HashMap<String, String>();
         gamingSquareGameInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_GAMES_ID, game_id);
-
-        // gamingSquareGameInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_VERSION_ID, "1.0");
-        // gamingSquareGameInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM,
-        // new HashMap<String, String>().put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM_DATA, "1"));
+        gamingSquareGameInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_VERSION_ID, "1.0");
+        gamingSquareGameInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM, "1");
 
         JsonObjectRequest req = new JsonObjectRequest(Request.Method.POST,
                 new GamingSquareHelper().GAMING_SQAURE_BASE_URL + url, new JSONObject(gamingSquareGameInfoParams),
@@ -55,6 +53,7 @@ public class GamingSquareGameInfoInfoVolleyData {
                     @Override
                     public void onResponse(JSONObject json) {
                         try {
+                            Toast.makeText(gamingSquareGameInfoFragment.getActivity(), "Data is"+json, Toast.LENGTH_SHORT).show();
                             if (Integer.parseInt(json.getString("status")) == 200) {
 
                                 JSONObject jsonData = json.getJSONObject("data");

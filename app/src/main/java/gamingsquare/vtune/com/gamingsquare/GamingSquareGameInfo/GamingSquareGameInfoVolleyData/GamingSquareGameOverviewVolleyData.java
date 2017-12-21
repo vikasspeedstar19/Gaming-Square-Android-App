@@ -45,10 +45,8 @@ public class GamingSquareGameOverviewVolleyData {
 
         HashMap<String, String> gamingSquareGameOverviewParams = new HashMap<String, String>();
         gamingSquareGameOverviewParams.put(new GamingSquareHelper().GAMING_SQUARE_GAMES_ID, game_id);
-
-        // gamingSquareGameInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_VERSION_ID, "1.0");
-        // gamingSquareGameInfoParams.put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM,
-        // new HashMap<String, String>().put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM_DATA, "1"));
+        gamingSquareGameOverviewParams.put(new GamingSquareHelper().GAMING_SQUARE_VERSION_ID, "1.0");
+        gamingSquareGameOverviewParams.put(new GamingSquareHelper().GAMING_SQUARE_EXTRA_PARAM, "1");
 
         JsonObjectRequest req = new JsonObjectRequest(Request.Method.POST,
                 new GamingSquareHelper().GAMING_SQAURE_BASE_URL + url, new JSONObject(gamingSquareGameOverviewParams),
