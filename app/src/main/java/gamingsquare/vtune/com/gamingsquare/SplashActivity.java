@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import gamingsquare.vtune.com.gamingsquare.GamingSquareHome.GamingSquareHome;
-import gamingsquare.vtune.com.gamingsquare.GamingSquareIntro.GamingSquareIntro;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -32,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
 //            finish();
 //        }
 
-        startActivity(new Intent(SplashActivity.this, GamingSquareIntro.class));
+        startActivity(new Intent(SplashActivity.this, IntroScr.class));
         finish();
     }
 }

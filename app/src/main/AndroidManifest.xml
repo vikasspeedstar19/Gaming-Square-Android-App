@@ -17,6 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".IntroScr"
+            android:theme="@style/Theme.Intro" />
         <activity android:name=".GamingSquareIntro.GamingSquareIntro" />
         <activity
             android:name=".GamingSquareHome.GamingSquareHome"

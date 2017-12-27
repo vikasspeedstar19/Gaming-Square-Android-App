@@ -37,6 +37,7 @@ dependencies {
     compile 'com.github.clans:fab:1.6.2'
     compile 'com.leo.simplearcloader:simplearcloader:1.0.+'
     compile 'com.borjabravo:readmoretextview:2.0.1'
+    compile 'agency.tango.android:material-intro-screen:0.0.5'
     compile 'com.github.mzelzoghbi:zgallery:0.3'
     compile 'com.github.developer-shivam:FeaturedRecyclerView:1.0.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
